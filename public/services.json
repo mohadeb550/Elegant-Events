@@ -1,0 +1,67 @@
+[
+    {
+      "id": "1",
+      "name": "Weddings",
+      "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
+      "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank.",
+      "price": "1500",
+      "features":[{"package":"Venue Selection Assistance", "details":"We'll help you choose the perfect venue for your wedding, whether it's a romantic garden, a stylish ballroom, or an intimate beachfront setting."}, {"package":"Personalized Ceremony", "details":"Your wedding ceremony is the heart of your celebration. Our experienced officiants will work with you to create a personalized ceremony that reflects your love story and values."},{"package":"Professional Photography", "details":"Capture every precious moment with professional photography services. Our skilled photographers will be there to document your day, ensuring you have beautiful memories to cherish forever"},{"package":"Music Selection", "details":"Create the perfect ambiance with a choice of music for your ceremony and reception. From classical melodies to contemporary tunes, we've got your musical preferences covered."},{"package":"Cake Cutting Ceremony", "details":"Enjoy a delicious cake made just for you and your guests. Our package includes a beautiful cake for your cake-cutting ceremony."},{"package":"Wedding Coordination", "details":"On the big day, our team will ensure that everything runs smoothly, from cueing the music to coordinating the schedule, so you can relax and savor every moment."},{"package":"Decor and Setup", "details":"We'll handle the setup and decoration of your wedding venue, including chairs, tables, linens, and centerpieces. You can choose from a range of color schemes and themes to match your vision."}
+    ]
+    },
+    
+    {
+      "id": "2",
+      "name": "Birthday Parties",
+      "image": "    https://i.ibb.co/LCN38YB/nathan-dumlao-As8zq82-LBpw-unsplash.jpg",
+      "description": "",
+      "price": "900",
+      "features":[{"package":"Venue Selection Assistance", "details":"We'll help you choose the perfect venue for your wedding, whether it's a romantic garden, a stylish ballroom, or an intimate beachfront setting."}, {"package":"Personalized Ceremony", "details":"Your wedding ceremony is the heart of your celebration. Our experienced officiants will work with you to create a personalized ceremony that reflects your love story and values."},{"package":"Professional Photography", "details":"Capture every precious moment with professional photography services. Our skilled photographers will be there to document your day, ensuring you have beautiful memories to cherish forever"},{"package":"Music Selection", "details":"Create the perfect ambiance with a choice of music for your ceremony and reception. From classical melodies to contemporary tunes, we've got your musical preferences covered."},{"package":"Cake Cutting Ceremony", "details":"Enjoy a delicious cake made just for you and your guests. Our package includes a beautiful cake for your cake-cutting ceremony."},{"package":"Wedding Coordination", "details":"On the big day, our team will ensure that everything runs smoothly, from cueing the music to coordinating the schedule, so you can relax and savor every moment."},{"package":"Decor and Setup", "details":"We'll handle the setup and decoration of your wedding venue, including chairs, tables, linens, and centerpieces. You can choose from a range of color schemes and themes to match your vision."}
+    ]
+    },
+
+    {
+      "id": "3",
+      "name": "Anniversaries",
+      "image": "https://i.ibb.co/6rz2s0w/samantha-gades-2-Tdhw-S6-Y3p-U-unsplash.jpg",
+      "description": "",
+      "price": "700",
+      "features":[{"package":"Venue Selection Assistance", "details":"We'll help you choose the perfect venue for your wedding, whether it's a romantic garden, a stylish ballroom, or an intimate beachfront setting."}, {"package":"Personalized Ceremony", "details":"Your wedding ceremony is the heart of your celebration. Our experienced officiants will work with you to create a personalized ceremony that reflects your love story and values."},{"package":"Professional Photography", "details":"Capture every precious moment with professional photography services. Our skilled photographers will be there to document your day, ensuring you have beautiful memories to cherish forever"},{"package":"Music Selection", "details":"Create the perfect ambiance with a choice of music for your ceremony and reception. From classical melodies to contemporary tunes, we've got your musical preferences covered."},{"package":"Cake Cutting Ceremony", "details":"Enjoy a delicious cake made just for you and your guests. Our package includes a beautiful cake for your cake-cutting ceremony."},{"package":"Wedding Coordination", "details":"On the big day, our team will ensure that everything runs smoothly, from cueing the music to coordinating the schedule, so you can relax and savor every moment."},{"package":"Decor and Setup", "details":"We'll handle the setup and decoration of your wedding venue, including chairs, tables, linens, and centerpieces. You can choose from a range of color schemes and themes to match your vision."}
+    ]
+    },
+    
+    {
+      "id": "4",
+      "name": "Engagement Parties",
+      "image": "https://i.ibb.co/zr76v69/frederick-medina-o-SY94imq3-Vo-unsplash.jpg",
+      "description": "",
+      "price": "1000",
+      "features":[{"package":"Venue Selection Assistance", "details":"We'll help you choose the perfect venue for your wedding, whether it's a romantic garden, a stylish ballroom, or an intimate beachfront setting."}, {"package":"Personalized Ceremony", "details":"Your wedding ceremony is the heart of your celebration. Our experienced officiants will work with you to create a personalized ceremony that reflects your love story and values."},{"package":"Professional Photography", "details":"Capture every precious moment with professional photography services. Our skilled photographers will be there to document your day, ensuring you have beautiful memories to cherish forever"},{"package":"Music Selection", "details":"Create the perfect ambiance with a choice of music for your ceremony and reception. From classical melodies to contemporary tunes, we've got your musical preferences covered."},{"package":"Cake Cutting Ceremony", "details":"Enjoy a delicious cake made just for you and your guests. Our package includes a beautiful cake for your cake-cutting ceremony."},{"package":"Wedding Coordination", "details":"On the big day, our team will ensure that everything runs smoothly, from cueing the music to coordinating the schedule, so you can relax and savor every moment."},{"package":"Decor and Setup", "details":"We'll handle the setup and decoration of your wedding venue, including chairs, tables, linens, and centerpieces. You can choose from a range of color schemes and themes to match your vision."}
+    ]
+    },
+    
+    {
+      "id": "5",
+      "name": "Retirement Parties",
+      "image": "https://i.ibb.co/NSLSYKD/pexels-t-leish-6975184.jpg",
+      "description": "",
+      "price": "750",
+      "features":[{"package":"Venue Selection Assistance", "details":"We'll help you choose the perfect venue for your wedding, whether it's a romantic garden, a stylish ballroom, or an intimate beachfront setting."}, {"package":"Personalized Ceremony", "details":"Your wedding ceremony is the heart of your celebration. Our experienced officiants will work with you to create a personalized ceremony that reflects your love story and values."},{"package":"Professional Photography", "details":"Capture every precious moment with professional photography services. Our skilled photographers will be there to document your day, ensuring you have beautiful memories to cherish forever"},{"package":"Music Selection", "details":"Create the perfect ambiance with a choice of music for your ceremony and reception. From classical melodies to contemporary tunes, we've got your musical preferences covered."},{"package":"Cake Cutting Ceremony", "details":"Enjoy a delicious cake made just for you and your guests. Our package includes a beautiful cake for your cake-cutting ceremony."},{"package":"Wedding Coordination", "details":"On the big day, our team will ensure that everything runs smoothly, from cueing the music to coordinating the schedule, so you can relax and savor every moment."},{"package":"Decor and Setup", "details":"We'll handle the setup and decoration of your wedding venue, including chairs, tables, linens, and centerpieces. You can choose from a range of color schemes and themes to match your vision."}
+    ]
+    },
+    
+    {
+      "id": "6",
+      "name": "Baby shower",
+      "image": "https://i.ibb.co/YPC2crj/pexels-anthony-gomes-14534185.jpg",
+      "description": "",
+      "price": "540",
+      "features":[{"package":"Venue Selection Assistance", "details":"We'll help you choose the perfect venue for your wedding, whether it's a romantic garden, a stylish ballroom, or an intimate beachfront setting."}, {"package":"Personalized Ceremony", "details":"Your wedding ceremony is the heart of your celebration. Our experienced officiants will work with you to create a personalized ceremony that reflects your love story and values."},{"package":"Professional Photography", "details":"Capture every precious moment with professional photography services. Our skilled photographers will be there to document your day, ensuring you have beautiful memories to cherish forever"},{"package":"Music Selection", "details":"Create the perfect ambiance with a choice of music for your ceremony and reception. From classical melodies to contemporary tunes, we've got your musical preferences covered."},{"package":"Cake Cutting Ceremony", "details":"Enjoy a delicious cake made just for you and your guests. Our package includes a beautiful cake for your cake-cutting ceremony."},{"package":"Wedding Coordination", "details":"On the big day, our team will ensure that everything runs smoothly, from cueing the music to coordinating the schedule, so you can relax and savor every moment."},{"package":"Decor and Setup", "details":"We'll handle the setup and decoration of your wedding venue, including chairs, tables, linens, and centerpieces. You can choose from a range of color schemes and themes to match your vision."}
+    ]
+    }
+    
+]
+
+
+
+
+

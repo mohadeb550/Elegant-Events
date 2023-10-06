@@ -21,7 +21,7 @@ export default function Navbar() {
         {navLinks}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl uppercase"> social events </a>
+    <a className="btn btn-ghost text-xl uppercase"> Elegant Events </a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

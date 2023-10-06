@@ -15,7 +15,7 @@ export default function App() {
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper mt-4">
 
-      {sliderImages?.map(image =>  <SwiperSlide key={image.id}> <img src={image.image} className='h-[250px] md:h-96 lg:h-[500px] w-full object-cover'/> </SwiperSlide>)}
+      {sliderImages?.map(image =>  <SwiperSlide key={image.id}> <img src={image.image} className='h-[240px] md:h-96 lg:h-[500px] w-full object-cover rounded-lg'/> </SwiperSlide>)}
       </Swiper>
     </>
   );

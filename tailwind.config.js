@@ -5,7 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    // extend: {fontFamily:{font-num: 'Paytone One'}},
   },
   plugins:[require("daisyui")],
 }
