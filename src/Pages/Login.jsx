@@ -23,7 +23,7 @@ export default function Login() {
         .then(result => {
     
             e.target.reset();
-            toast.success('Login Successful !');;
+            toast.success('Login Successful !');
             navigate(location.state? location.state : '/');
         })
         .catch(error =>  toast.error(error.message))
