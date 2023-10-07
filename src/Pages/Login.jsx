@@ -8,7 +8,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 
 export default function Login() {
 
-    const { loginUser ,loginWithGoogle, loginWithGithub } = useContext(AuthContext);
+  const { loginUser , loginWithGoogle , loginWithGithub} = useContext(AuthContext);
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -23,24 +23,23 @@ export default function Login() {
             e.target.reset();
             toast.success('Login Successful !')
         })
-        .catch(error =>  toast.error('An error occurred!'))
+        .catch(error =>  toast.error(error.message))
     }
 
-  //   const socialLogin = (platform) => {
-  //     platform()
-  //     .then(result => {
-  //         toast.success('Login Successful!')
-  //         navigate('/')
-  //     })
-  //     .catch(error => {
-  //         toast.error('An error occurred!')
-  //     })
-  // }
+    const socialLogin = (platform) => {
+      platform()
+      .then(result => {
+          toast.success('Login Successful!')
+      })
+      .catch(error => {
+          toast.error(error.message)
+      })
+  }
 
 
 
   return(
-    <div className="hero h-[70vh] bg-base-200">
+    <div className="hero h-[600px] bg-base-200">
     <div className="hero-content flex-col w-[360px] md:w-[420px]">
       <div className="text-center lg:text-left">
         <h1 className="text-3xl lg:text-4xl text-red-500 font-bold">Login now!</h1>
@@ -64,18 +63,16 @@ export default function Login() {
               <span className="label-text">Password</span>
             </label>
             <input type="text" placeholder="Password" className="input input-bordered" name="password" />
-            <label className="my-2">
-              <Link to="/forgot-password" className="text-xs text-orange-600 hover:underline">Forgot password?</Link>
-            </label>
+          
 
-            <div>
+            <div className="mt-3">
                 <h4 className="text-sm font-semibold"> Don't Have An Account? <Link to='/register'> <span className="text-orange-500  hover:underline"> Register </span></Link> </h4>
             </div>
 
             <div className="flex flex-col justify-evenly gap-3 mt-4 ">
-                <div className="py-1 px-2 border rounded flex gap-1 items-center justify-center hover:bg-gray-50 cursor-pointer" > <FcGoogle className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Google</p> </div>
+                <div onClick={()=> socialLogin(loginWithGoogle)} className="py-1 px-2 border rounded flex gap-1 items-center justify-center hover:bg-gray-50 cursor-pointer" > <FcGoogle className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Google</p> </div>
 
-                <div className="py-1 px-2 border rounded flex gap-1 items-center justify-center hover:bg-gray-50 cursor-pointer"  > <FaGithub className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Github</p> </div>
+                <div onClick={()=> socialLogin(loginWithGithub)} className="py-1 px-2 border rounded flex gap-1 items-center justify-center hover:bg-gray-50 cursor-pointer"  > <FaGithub className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Github</p> </div>
             </div>
 
           </div>

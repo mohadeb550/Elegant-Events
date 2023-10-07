@@ -22,7 +22,7 @@ export default function Service({service}) {
 
    <div className="flex items-center justify-center gap-4">
     <h4 className="text-4xl text-pink-600 font-bold">{price}$ </h4>
-  <Link to={`/service/${id}`}> <button className="bg-yellow-500 py-2 px-3 text-black rounded font-semibold transition-all hover:bg-yellow-600"> View Details </button></Link>
+  <Link to={`/service/${id}`}> <button className="bg-yellow-500 py-2 px-3 text-black rounded font-semibold transition-all hover:bg-yellow-600"> See Details </button></Link>
    </div>
    
   </div>

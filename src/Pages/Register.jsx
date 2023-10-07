@@ -1,5 +1,5 @@
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { updateProfile } from "firebase/auth";
 import auth from "../firebase/firebase.config.js";
@@ -13,9 +13,11 @@ import { AuthContext } from "../AuthProvider/AuthProvider.jsx";
 export default function SignUp() {
   
     const { createUser , loginWithGoogle , loginWithGithub} = useContext(AuthContext);
+    const [ error , setError ] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setError('');
 
         const form = new FormData(e.target);
         const name = form.get('name');
@@ -23,8 +25,17 @@ export default function SignUp() {
         const password = form.get('password');
         const photo = form.get('photo');
 
-       
+        if(password.length < 6){
+          return setError('Password must be 6 characters')
+        }
 
+        if(!/(?=.*[A-Z])/.test(password)){
+          return setError('Password must have a capital letter')
+        }
+        if(!/[@#$%^&!*]/.test(password)){
+          return setError('Password must have a special character')
+        }
+       
         createUser(email, password)
         .then(result => {
            updateProfile(auth.currentUser, {displayName: name, photoURL: photo})
@@ -34,10 +45,11 @@ export default function SignUp() {
         .catch(error =>  toast.error('An error occurred!'))
     }
 
+
     const socialLogin = (platform) => {
         platform()
         .then(result => {
-            toast.success('Login Successful!')
+            toast.success('Sign Up Successful!')
         })
         .catch(error => {
             toast.error('An error occurred!')
@@ -46,7 +58,7 @@ export default function SignUp() {
 
 
   return (
-    <div className="hero h-[85vh] bg-base-200">
+    <div className="hero h-[780px] bg-base-200">
     <div className="hero-content flex-col w-[360px] md:w-[420px]">
       <div className="text-center lg:text-left">
         <h1 className="text-3xl lg:text-4xl text-red-500 font-bold"> Create New Account!</h1>
@@ -77,6 +89,7 @@ export default function SignUp() {
               <span className="label-text">Password</span>
             </label>
             <input type="text" placeholder="Password" className="input input-bordered" name="password" />
+            <span className="text-red-500 text-sm p-1"> {error} </span>
            
 
             <div className="form-control mb-3">
@@ -98,7 +111,7 @@ export default function SignUp() {
             </div>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-error text-gray-50 hover:bg-rose-500" type="submit"> Sign Up </button>
+            <button className="btn btn-error text-gray-50 hover:bg-rose-500" type="submit"> Register </button>
           </div>
         </form>
 
