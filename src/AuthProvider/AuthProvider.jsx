@@ -1,9 +1,10 @@
 import { createContext, useEffect, useState } from "react"
 import auth from "../firebase/firebase.config";
-import { onAuthStateChanged } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 
 export const AuthContext = createContext(null);
-
+const googleProvider = new GoogleAuthProvider();
+const githubProvider = new GithubAuthProvider();
 
 
 export default function AuthProvider({children}) {
@@ -23,6 +24,30 @@ export default function AuthProvider({children}) {
         .then(data => setServices(data));
     },[])
 
+    // register with email & password 
+    const createUser = (email, password) => {
+      return createUserWithEmailAndPassword(auth, email, password);
+    }
+
+    // login with google
+    const loginWithGoogle = () => {
+      return signInWithPopup(auth, googleProvider);
+    }
+
+    // login with github
+    const loginWithGithub = () => {
+      return signInWithPopup(auth, githubProvider);
+    }
+
+    // login with email & password
+    const loginUser = (email, password ) => {
+      return signInWithEmailAndPassword(auth, email, password);
+    }
+
+    // logout user 
+    const logOut = () => {
+     return signOut(auth);
+    }
 
     // firebase observer
     useEffect(()=>{
@@ -38,7 +63,7 @@ export default function AuthProvider({children}) {
 
 
     // dynamic context value provide
-    const authInfo = { sliderImages , services, currentUser, loading }
+    const authInfo = { sliderImages , services, createUser, loginUser, loginWithGoogle, loginWithGithub, logOut ,  currentUser, loading }
 
     if(loading){return  <span className="loading loading-bars  bg-yellow-600 w-10 md:w-16 absolute top-1/3 left-2/4"></span>}
 

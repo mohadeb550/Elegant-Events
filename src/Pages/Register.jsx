@@ -6,41 +6,43 @@ import auth from "../firebase/firebase.config.js";
 import toast  from "react-hot-toast";
 import { FcGoogle } from 'react-icons/fc'
 import { FaGithub } from 'react-icons/fa'
+import { AuthContext } from "../AuthProvider/AuthProvider.jsx";
 
 
 
 export default function SignUp() {
-    const navigate = useNavigate()
-    // const { createUser , loginWithGoogle , loginWithGithub} = useContext(AuthContext);
+  
+    const { createUser , loginWithGoogle , loginWithGithub} = useContext(AuthContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        const photo = e.target.photo.value;
+        const form = new FormData(e.target);
+        const name = form.get('name');
+        const email = form.get('email');
+        const password = form.get('password');
+        const photo = form.get('photo');
 
-        // createUser(email, password)
-        // .then(result => {
-        //     updateProfile(auth.currentUser, {displayName: name, photoURL: photo})
-        //     e.target.reset();
-        //     toast.success('Successfully Account Created!')
-        //     navigate('/')
-        // })
-        // .catch(error =>  toast.error('An error occurred!'))
+       
+
+        createUser(email, password)
+        .then(result => {
+           updateProfile(auth.currentUser, {displayName: name, photoURL: photo})
+            e.target.reset();
+            toast.success('Successfully Account Created!')
+        })
+        .catch(error =>  toast.error('An error occurred!'))
     }
 
-    // const socialLogin = (platform) => {
-    //     platform()
-    //     .then(result => {
-    //         toast.success('Login Successful!')
-    //         navigate('/')
-    //     })
-    //     .catch(error => {
-    //         toast.error('An error occurred!')
-    //     })
-    // }
+    const socialLogin = (platform) => {
+        platform()
+        .then(result => {
+            toast.success('Login Successful!')
+        })
+        .catch(error => {
+            toast.error('An error occurred!')
+        })
+    }
 
 
   return (
@@ -89,10 +91,10 @@ export default function SignUp() {
             </div>
 
            
-            <div className="flex justify-evenly gap-5 mt-4">
-                <div className="py-1 px-2 border rounded flex gap-1 items-center hover:bg-gray-50 cursor-pointer"  > <FcGoogle className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Google</p> </div>
+            <div className="flex flex-col gap-3 mt-4">
+                <div className="py-1 px-2 border rounded flex justify-center gap-1 items-center hover:bg-gray-50 cursor-pointer"  onClick={()=> socialLogin(loginWithGoogle) }> <FcGoogle className="text-2xl"/> <p className="text-sm font-semibold text-slate-600" > Sign up  with Google</p> </div>
 
-                <div className="py-1 px-2 border rounded flex gap-1 items-center hover:bg-gray-50 cursor-pointer" > <FaGithub className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Github</p> </div>
+                <div className="py-1 px-2 border rounded flex justify-center gap-1 items-center hover:bg-gray-50 cursor-pointer" onClick={()=> socialLogin(loginWithGithub) }> <FaGithub className="text-2xl"/> <p className="text-sm font-semibold text-slate-600" > Sign up with Github</p> </div>
             </div>
           </div>
           <div className="form-control mt-6">

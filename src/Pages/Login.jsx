@@ -3,27 +3,27 @@ import { Link, useNavigate } from "react-router-dom";
 import toast  from "react-hot-toast";
 import { FcGoogle } from 'react-icons/fc'
 import { FaGithub } from 'react-icons/fa'
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 
 export default function Login() {
 
-    const navigate = useNavigate()
-    // const { loginUser ,loginWithGoogle, loginWithGithub } = useContext(AuthContext);
+    const { loginUser ,loginWithGoogle, loginWithGithub } = useContext(AuthContext);
 
     const handleLogin = (e) => {
         e.preventDefault();
 
-        const email = e.target.email.value;
-        const password = e.target.password.value;
+        const form  = new FormData(e.target);
+        const email = form.get('email')
+        const password = form.get('password')
 
-        // loginUser(email, password)
-        // .then(result => {
+        loginUser(email, password)
+        .then(result => {
     
-        //     e.target.reset();
-        //     toast.success('Logged In')
-        //     navigate('/')
-        // })
-        // .catch(error =>  toast.error('An error occurred!'))
+            e.target.reset();
+            toast.success('Login Successful !')
+        })
+        .catch(error =>  toast.error('An error occurred!'))
     }
 
   //   const socialLogin = (platform) => {
@@ -72,10 +72,10 @@ export default function Login() {
                 <h4 className="text-sm font-semibold"> Don't Have An Account? <Link to='/register'> <span className="text-orange-500  hover:underline"> Register </span></Link> </h4>
             </div>
 
-            <div className="flex justify-evenly gap-5 mt-4 ">
-                <div className="py-1 px-2 border rounded flex gap-1 items-center hover:bg-gray-50 cursor-pointer" > <FcGoogle className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Google</p> </div>
+            <div className="flex flex-col justify-evenly gap-3 mt-4 ">
+                <div className="py-1 px-2 border rounded flex gap-1 items-center justify-center hover:bg-gray-50 cursor-pointer" > <FcGoogle className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Google</p> </div>
 
-                <div className="py-1 px-2 border rounded flex gap-1 items-center hover:bg-gray-50 cursor-pointer"  > <FaGithub className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Github</p> </div>
+                <div className="py-1 px-2 border rounded flex gap-1 items-center justify-center hover:bg-gray-50 cursor-pointer"  > <FaGithub className="text-2xl"/> <p className="text-sm font-semibold text-slate-600">Sign In Github</p> </div>
             </div>
 
           </div>
