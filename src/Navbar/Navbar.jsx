@@ -19,8 +19,8 @@ export default function Navbar() {
     const signOut = () => {
       logOut()
       .then(result => {
-        navigate('/');
         toast.success('Logged Out !')
+        navigate('/');
       })
       .catch(error => {
 

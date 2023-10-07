@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast  from "react-hot-toast";
 import { FcGoogle } from 'react-icons/fc'
 import { FaGithub } from 'react-icons/fa'
@@ -9,6 +9,8 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 export default function Login() {
 
   const { loginUser , loginWithGoogle , loginWithGithub} = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -21,7 +23,8 @@ export default function Login() {
         .then(result => {
     
             e.target.reset();
-            toast.success('Login Successful !')
+            toast.success('Login Successful !');;
+            navigate(location.state? location.state : '/');
         })
         .catch(error =>  toast.error(error.message))
     }
@@ -30,6 +33,7 @@ export default function Login() {
       platform()
       .then(result => {
           toast.success('Login Successful!')
+          navigate(location.state? location.state : '/');
       })
       .catch(error => {
           toast.error(error.message)

@@ -5,6 +5,7 @@ import ServiceDetails from "../components/ServiceDetails";
 import NotFound from "../Pages/NotFound";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
         {path:'/', element: <Home/>},
         {path:'/login', element: <Login/>},
         {path:'/register', element: <Register/>},
-        {path:'/service/:id', element: <ServiceDetails/>}
+        {path:'/service/:id', element: <PrivateRoute><ServiceDetails/></PrivateRoute> }
         
     ]}
 ])
