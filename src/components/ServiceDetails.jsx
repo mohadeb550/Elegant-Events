@@ -11,11 +11,9 @@ export default function ServiceDetails() {
 
 
     useEffect(()=>{
-        setFoundService(services?.find(service => service.id.toString === id));
+        setFoundService(services.find(service => service.id.toString === id));
     },[])
 
-
-    if(loading){return <span className="loading loading-bars loading-lg"></span>}
 
   return (
     <div className="mt-6 mb-14">

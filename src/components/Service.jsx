@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Service({service}) {
 
     const { id , name , image ,description, price } = service;
-    console.log(image)
+ 
 
   return (
    <div className="relative grid h-[30rem] md:h-[35rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">

@@ -37,9 +37,10 @@ export default function AuthProvider({children}) {
 
 
 
-
     // dynamic context value provide
     const authInfo = { sliderImages , services, currentUser, loading }
+
+    if(loading){return  <span className="loading loading-bars  bg-yellow-600 w-10 md:w-16 absolute top-1/3 left-2/4"></span>}
 
   return (
     <>

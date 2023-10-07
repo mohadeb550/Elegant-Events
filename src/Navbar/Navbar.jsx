@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
 
   <div className="dropdown dropdown-end flex items-center justify-center gap-2">
     
-        <button className="font-semibold border p-1 px-3 rounded-full transition-all hover:bg-gray-100"> Login </button>
+        <Link to='/login'><button className="font-semibold border p-1 px-3 rounded-full transition-all hover:bg-gray-100"> Login </button></Link>
         <div className="w-9 lg:w-10 rounded-full">
           <img src='/avatar.jpg'/>
         </div>

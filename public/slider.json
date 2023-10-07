@@ -1,30 +1,47 @@
 [
-    {
-      "id": "1",
-      "image": "https://i.ibb.co/RQrrKz1/health.jpg"
-    },
-    {
-      "id": "2",
-      "image": "https://i.ibb.co/K66KQqD/education.jpg"
-    },
-    {
-      "id": "3",
-      "image": "https://i.ibb.co/K66KQqD/education.jpg"
-    },
-    {
-      "id": "4",
-      "image": "https://i.ibb.co/K66KQqD/education.jpg"
-    },
-    {
-      "id": "5",
-      "image": "https://i.ibb.co/K66KQqD/education.jpg"
-    },
-    {
-      "id": "6",
-      "image": "https://i.ibb.co/K66KQqD/education.jpg"
-    },
-    {
-      "id": "7",
-      "image": "https://i.ibb.co/K66KQqD/education.jpg"
-    }
+  {
+    "id": "1",
+    "name": "Weddings",
+    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
+    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    
+  },
+  {
+    "id": "1",
+    "name": "Weddings",
+    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
+    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    
+  },
+  {
+    "id": "1",
+    "name": "Weddings",
+    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
+    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    
+  },
+  {
+    "id": "1",
+    "name": "Weddings",
+    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
+    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    
+  },
+  {
+    "id": "1",
+    "name": "Weddings",
+    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
+    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    
+  },
+  {
+    "id": "1",
+    "name": "Weddings",
+    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
+    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    
+  }
+    
 ]
+
+  
