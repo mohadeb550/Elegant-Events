@@ -1,3 +1,4 @@
+import SatisfiedClients from "../components/SatisfiedClients";
 import Services from "../components/Services";
 import Slider from "../components/Slider";
 
@@ -9,6 +10,7 @@ export default function Home() {
 
      <Slider/>
       <Services/>
+      <SatisfiedClients/>
     </section>
   )
 }

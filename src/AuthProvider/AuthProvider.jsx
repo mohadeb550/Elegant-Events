@@ -11,6 +11,7 @@ export default function AuthProvider({children}) {
 
     const [ sliderImages , setSliderImages ] = useState(null);
     const [ services , setServices ] = useState(null);
+    const [ allFeedback , setAllFeedback ] = useState(null);
     const [ currentUser ,setCurrentUser ] = useState(null);
     const [ loading , setLoading ] = useState(true);
 
@@ -22,6 +23,9 @@ export default function AuthProvider({children}) {
 
         fetch('/services.json').then(res => res.json())
         .then(data => setServices(data));
+
+        fetch('/feedback.json').then(res => res.json())
+        .then(data => setAllFeedback(data));
     },[])
 
     // register with email & password 
@@ -63,7 +67,7 @@ export default function AuthProvider({children}) {
 
 
     // dynamic context value provide
-    const authInfo = { sliderImages , services, createUser, loginUser, loginWithGoogle, loginWithGithub, logOut ,  currentUser, loading }
+    const authInfo = { sliderImages , services, allFeedback,  createUser, loginUser, loginWithGoogle, loginWithGithub, logOut ,  currentUser, loading }
 
     if(loading){return  <span className="loading loading-bars  bg-yellow-600 w-10 md:w-16 absolute top-1/3 left-2/4"></span>}
 
