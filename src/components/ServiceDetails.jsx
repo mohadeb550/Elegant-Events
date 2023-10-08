@@ -33,7 +33,7 @@ export default function ServiceDetails() {
        
        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {features?.map((feature, index) => {
-        return <div key={index} className="border border p-3 rounded-xl">
+        return <div key={index} className="border-b p-3">
         <h4 className="text-xl md:text-2xl font-semibold text-amber-600"> {feature.package} </h4>
         <p className="text-gray-600"> {feature.details} </p>
       </div>

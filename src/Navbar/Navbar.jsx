@@ -14,7 +14,6 @@ export default function Navbar() {
 
   const navLinks = <>
    <li ><NavLink className={({isActive})=> isActive && 'bg-transparent font-semibold text-yellow-600 ' } to='/'> Home </NavLink></li>
-   <li ><NavLink className={({isActive})=> isActive && 'bg-transparent font-semibold text-yellow-600 ' } to='/about'> About </NavLink></li>
    <li ><NavLink className={({isActive})=> isActive && 'bg-transparent font-semibold text-yellow-600 ' } to='/contacts'> Contacts </NavLink></li>
    <li ><NavLink className={({isActive})=> isActive && 'bg-transparent font-semibold text-yellow-600 ' } to='/blog'> Blog </NavLink></li>
   </>
