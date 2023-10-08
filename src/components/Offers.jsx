@@ -7,27 +7,27 @@ export default function Offers() {
 
         <div className='flex-1 grid grid-cols-2 md:grid-cols-3 gap-5 text-center content-center'>
 
-            <div className='flex flex-col items-center justify-center  h-56 gap-1'>
+            <div className='flex flex-col items-center justify-center  h-32 lg:h-44 gap-1'>
                <img src='/decoration-icon.png' className='w-14 md:w-16 lg:w-20'/>
                 <p className='text-gray-600 lg:text-xl font-semibold'>Catering and decor</p>
             </div>
-            <div className='flex flex-col items-center justify-center  h-56 gap-1'>
+            <div className='flex flex-col items-center justify-center  h-32 lg:h-44 gap-1'>
             <img src='/sunflower-icon.png' className='w-14 md:w-16 lg:w-20'/>
                 <p className='text-gray-600 lg:text-xl font-semibold'>Floral</p>
             </div>
-            <div className='flex flex-col items-center justify-center  h-56 gap-1'>
+            <div className='flex flex-col items-center justify-center  h-32 lg:h-44 gap-1'>
             <img src='/Circle-icons-camera.svg' className='w-14 md:w-16 lg:w-20'/>
                 <p className='text-gray-600 lg:text-xl font-semibold'>Photo, Video and Audio</p>
             </div>
-            <div className='flex flex-col items-center justify-center  h-56 gap-1'>
+            <div className='flex flex-col items-center justify-center  h-32 lg:h-44 gap-1'>
             <img src='/gift-present-giving-icon.png' className='w-14 md:w-16 lg:w-20'/>
                 <p className='text-gray-600 lg:text-xl font-semibold'>Invitation Cards</p>
             </div>
-            <div className='flex flex-col items-center justify-center  h-56 gap-1'>
+            <div className='flex flex-col items-center justify-center  h-32 lg:h-44 gap-1'>
             <img src='/balloons-color-icon.png' className='w-14 md:w-16 lg:w-20'/>
                 <p className='text-gray-600 lg:text-xl font-semibold'>Entertainment</p>
             </div>
-            <div className='flex flex-col items-center justify-center  h-56 gap-1'>
+            <div className='flex flex-col items-center justify-center  h-32 lg:h-44 gap-1'>
             <img src='/bungalow-villa-color-icon.png' className='w-14 md:w-16 lg:w-20'/>
                 <p className='text-gray-600 lg:text-xl font-semibold'>Venue Selection</p>
             </div>
