@@ -16,7 +16,8 @@ export default function Service({service}) {
  
 
   return (
-   <div className="relative grid h-[30rem] md:h-[35rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700" data-aos ='fade-up-left'>
+   <div className="relative grid h-[30rem] md:h-[35rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700" data-aos ='fade-up'>
+
   <div style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat',  backgroundPosition: 'center'
       }} className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none`}>
     <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black via-black/20"></div>

@@ -6,6 +6,7 @@ import NotFound from "../Pages/NotFound";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivateRoute from "./PrivateRoute";
+import Contact from "../Pages/Contact";
 
 
 const router = createBrowserRouter([
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
         {path:'/', element: <Home/>},
         {path:'/login', element: <Login/>},
         {path:'/register', element: <Register/>},
+        {path:'/contacts', element: <PrivateRoute><Contact/></PrivateRoute>},
         {path:'/service/:id', element: <PrivateRoute><ServiceDetails/></PrivateRoute> }
         
     ]}

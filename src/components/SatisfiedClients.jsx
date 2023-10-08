@@ -46,7 +46,7 @@ function AutoplaySlider() {
   };
 
   return (
-    <div className="autoplay-slider my-32">
+    <div className="autoplay-slider my-32 w-[95%] mx-auto">
         <h1 className="text-[26px] md:text-3xl lg:text-5xl text-yellow-600 font-bold text-center mb-10 md:mb-16 lg:mb-20"> Satisfied Clients About Us</h1>
       <Slider {...settings}>
 

@@ -1,1 +1,0 @@
-https://preview.themeforest.net/item/partymaker-event-planner-wordpress-theme/full_screen_preview/21451583?_ga=2.245201612.899344400.1696599203-973899583.1690523775
