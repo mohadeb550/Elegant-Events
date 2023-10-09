@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast  from "react-hot-toast";
 import { FcGoogle } from 'react-icons/fc'
@@ -11,6 +11,7 @@ export default function Login() {
   const { loginUser , loginWithGoogle , loginWithGithub} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+
 
     const handleLogin = (e) => {
         e.preventDefault();

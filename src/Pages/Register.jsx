@@ -12,7 +12,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider.jsx";
 
 export default function SignUp() {
   
-    const { createUser , loginWithGoogle , loginWithGithub} = useContext(AuthContext);
+    const { createUser , loginWithGoogle , loginWithGithub } = useContext(AuthContext);
     const [ error , setError ] = useState('');
     const navigate = useNavigate();
 

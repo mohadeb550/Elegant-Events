@@ -33,7 +33,6 @@ export default function AuthProvider({children}) {
 
     // register with email & password 
     const createUser = (email, password) => {
-      setAuthLoading(true);
       return createUserWithEmailAndPassword(auth, email, password);
     }
 
@@ -49,7 +48,6 @@ export default function AuthProvider({children}) {
 
     // login with email & password
     const loginUser = (email, password ) => {
-      setAuthLoading(true);
       return signInWithEmailAndPassword(auth, email, password);
     }
 
@@ -72,7 +70,7 @@ export default function AuthProvider({children}) {
 
 
     // dynamic context value provide
-    const authInfo = { sliderImages , services, allFeedback,  createUser, loginUser, loginWithGoogle, loginWithGithub, logOut ,  currentUser, authLoading }
+    const authInfo = { sliderImages , services, allFeedback,  createUser, loginUser, loginWithGoogle, loginWithGithub, logOut ,  currentUser }
 
 
     if(authLoading || dataLoading){return  <span className="loading loading-spinner text-red-400 w-9 md:w-12 absolute top-[13%] left-2/4"></span>}

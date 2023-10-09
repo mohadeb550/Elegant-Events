@@ -21,9 +21,9 @@ export default function Navbar() {
 
 
   const navLinks = <>
-   <li ><NavLink className={({isActive})=> isActive && 'bg-transparent font-semibold text-yellow-600 ' } to='/'> Home </NavLink></li>
-   <li ><NavLink className={({isActive})=> isActive && 'bg-transparent font-semibold text-yellow-600 ' } to='/contacts'> Contacts </NavLink></li>
-   <li ><NavLink className={({isActive})=> isActive && 'bg-transparent font-semibold text-yellow-600 ' } to='/blog'> Blog </NavLink></li>
+   <li ><NavLink className={({isActive})=> isActive? 'bg-transparent font-semibold text-yellow-600 ': '' } to='/'> Home </NavLink></li>
+   <li ><NavLink className={({isActive})=> isActive? 'bg-transparent font-semibold text-yellow-600 ': '' } to='/contacts'> Contacts </NavLink></li>
+   <li ><NavLink className={({isActive})=> isActive? 'bg-transparent font-semibold text-yellow-600 ': '' } to='/blog'> Blog </NavLink></li>
   </>
     
     const signOut = () => {
@@ -61,11 +61,11 @@ export default function Navbar() {
 
   <div className="dropdown dropdown-end flex items-center justify-center gap-2 z-50" data-aos ="fade-left">
     
-        {!currentUser && <Link to='/login'><button className="font-semibold border p-1 px-3 rounded-full transition-all hover:bg-gray-100"> Login </button></Link>}
+        {!currentUser && <Link to='/login'><button className="font-semibold border text-sm md:text-[16px] p-1 px-3 rounded-full transition-all hover:bg-gray-100"> Login </button></Link>}
         {currentUser && <h4 className="font-semibold"> {currentUser?.displayName || 'User'}</h4>}
         
         <div className="z-30 lg:w-10 rounded-full p-[2px] border border-gray-500">
-          <img tabIndex={0} src={currentUser?.photoURL || '/avatar.jpg' } className="dropdown w-8 md:w-9 cursor-pointer rounded-full" />
+          <img tabIndex={0} src={currentUser?.photoURL || '/avatar.jpg' } className="dropdown w-7 md:w-9 cursor-pointer rounded-full" />
 
           {currentUser && 
          <ul tabIndex={0} className="dropdown-content p-2 shadow bg-base-100 rounded w-52 flex items-center">
