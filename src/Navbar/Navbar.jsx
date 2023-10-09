@@ -50,7 +50,7 @@ export default function Navbar() {
     </div>
     <div className="flex items-center gap-1">
     <img src='/logo.png' className="w-9 md:w-12 lg:w-16"/>
-    <p className="text-base md:text-xl lg:text-2xl font-semibold text-yellow-600"> Elegant</p>
+    <p className="text-base  md:text-xl lg:text-2xl font-semibold text-yellow-600"> Elegant</p>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">

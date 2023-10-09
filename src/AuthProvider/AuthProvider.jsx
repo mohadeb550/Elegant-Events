@@ -13,7 +13,8 @@ export default function AuthProvider({children}) {
     const [ services , setServices ] = useState(null);
     const [ allFeedback , setAllFeedback ] = useState(null);
     const [ currentUser ,setCurrentUser ] = useState(null);
-    const [ loading , setLoading ] = useState(true);
+    const [ authLoading , setAuthLoading ] = useState(true);
+    const [ dataLoading , setDataLoading ] = useState(true);
 
 
     // fetching data 
@@ -26,10 +27,13 @@ export default function AuthProvider({children}) {
 
         fetch('/feedback.json').then(res => res.json())
         .then(data => setAllFeedback(data));
+
+        setDataLoading(false)
     },[])
 
     // register with email & password 
     const createUser = (email, password) => {
+      setAuthLoading(true);
       return createUserWithEmailAndPassword(auth, email, password);
     }
 
@@ -45,6 +49,7 @@ export default function AuthProvider({children}) {
 
     // login with email & password
     const loginUser = (email, password ) => {
+      setAuthLoading(true);
       return signInWithEmailAndPassword(auth, email, password);
     }
 
@@ -57,7 +62,7 @@ export default function AuthProvider({children}) {
     useEffect(()=>{
       const unsubscribe = onAuthStateChanged(auth,(currentUser)=>{
         setCurrentUser(currentUser);
-        setLoading(false);
+        setAuthLoading(false);
       })
       return ()=>{
         unsubscribe();
@@ -67,10 +72,10 @@ export default function AuthProvider({children}) {
 
 
     // dynamic context value provide
-    const authInfo = { sliderImages , services, allFeedback,  createUser, loginUser, loginWithGoogle, loginWithGithub, logOut ,  currentUser, loading }
+    const authInfo = { sliderImages , services, allFeedback,  createUser, loginUser, loginWithGoogle, loginWithGithub, logOut ,  currentUser, authLoading }
 
 
-    if(loading){return  <span className="loading loading-spinner text-red-400 w-9 md:w-12 absolute top-[13%] left-2/4"></span>}
+    if(authLoading || dataLoading){return  <span className="loading loading-spinner text-red-400 w-9 md:w-12 absolute top-[13%] left-2/4"></span>}
 
   return (
     <>

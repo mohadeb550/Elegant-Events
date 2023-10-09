@@ -35,7 +35,7 @@ export default function App() {
 {image.name}
 </h2>
 <h5 className="mb-2 md:mb-4 text-xs md:text-lg block font-sans font-semibold leading-snug tracking-normal text-gray-400 antialiased">
-{image.description}
+{image.description.slice(0, 100)}
 </h5>
 
 </div>

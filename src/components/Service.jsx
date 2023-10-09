@@ -26,8 +26,8 @@ export default function Service({service}) {
     <h2 className="mb-1 md:mb-3 block font-sans text-3xl md:text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
     {name}
     </h2>
-    <h5 className="mb-1 md:mb-4 block font-sans font-semibold leading-snug tracking-normal text-gray-400 antialiased">
-      {description.slice(0, 120)}
+    <h5 className="mb-1 md:mb-4 block font-sans font-semibold leading-snug tracking-normal text-gray-400 text-sm md:text-[16px] antialiased">
+      {description.slice(0, 80)}
     </h5>
 
    <div className="flex items-center justify-center gap-4">

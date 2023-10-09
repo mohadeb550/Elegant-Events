@@ -43,7 +43,7 @@ export default function Login() {
 
 
   return(
-    <div className="hero h-[1000px] md:h-[600px] bg-base-200">
+    <div className="hero h-[900px] pb-32 md:pb-0 md:h-[600px] bg-base-200">
     <div className="hero-content flex-col md:flex-row w-full">
 
       <div className="text-center lg:text-left">
