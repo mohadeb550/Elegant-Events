@@ -25,7 +25,7 @@ export default function App() {
 {sliderImages?.map(image =>  <SwiperSlide key={image.id}> 
 
 <>
-<div className="relative flex-col h-[220px] md:h-80 lg:h-[450px] overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+<div className="relative flex-col h-[220px] md:h-80 lg:h-[450px] rounded-xl bg-white bg-clip-border text-center text-gray-700">
 <div style={{ backgroundImage: `url(${image.image})`, backgroundRepeat: 'no-repeat'
 }} className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none`}>
 <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black via-black/40"></div>

@@ -7,13 +7,13 @@ import { Toaster } from "react-hot-toast";
 export default function Root() {
 
   return (
-    <>
+    <section className="overflow-x-hidden">
 
     <Toaster/>
     <Navbar/>
     <Outlet/>
     <Footer/>
 
-    </>
+    </section>
   )
 }

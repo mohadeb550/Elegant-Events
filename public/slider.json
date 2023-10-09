@@ -2,43 +2,43 @@
   {
     "id": "1",
     "name": "Weddings",
-    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
+    "image": "https://i.ibb.co/pZxXv8P/pexels-luis-quintero-1560303.jpg",
     "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
     
   },
   {
     "id": "2",
-    "name": "Weddings",
-    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
-    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    "name": "Birthday Parties",
+    "image": "https://i.ibb.co/XCD9r3X/pexels-vlada-karpovich-7099957.jpg",
+    "description": "Make your next birthday celebration an unforgettable event with our 'Ultimate Birthday Bash Package'. Whether you're turning another year older or celebrating a loved one's special day, we've got all the elements you need to throw a fantastic party without the stress of planning."
     
   },
   {
     "id": "3",
-    "name": "Weddings",
-    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
-    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    "name": "Anniversaries",
+    "image": "https://i.ibb.co/T2HNyq4/pexels-criativithy-1805416.jpg",
+    "description": "Celebrate your enduring love and commitment with our 'Timeless Love Anniversary Package.' Whether you're marking a significant milestone or simply want to cherish the bond you share, our package is designed to create a memorable and romantic anniversary celebration that won't break the bank."
     
   },
   {
     "id": "4",
-    "name": "Weddings",
-    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
-    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    "name": "Engagement Parties",
+    "image": "https://i.ibb.co/hZ16L8T/pexels-emir-kaan-okutan-5122865.jpg",
+    "description": "The journey to forever begins with a joyful celebration of your love, and our 'Celebrate Love Engagement Party Package' is designed to help you kickstart this exciting chapter in style we've got all the elements you need for a memorable engagement party without exceeding your budget."
     
   },
   {
     "id": "5",
-    "name": "Weddings",
-    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
-    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    "name": "Retirement Parties",
+    "image": "https://i.ibb.co/9G7nDw6/pexels-rdne-stock-project-7867374.jpg",
+    "description": "Retirement marks the beginning of a new chapter in life, and what better way to celebrate it than with our Golden Retirement Celebration Package. Designed to honor the years of hard work and dedication, this package ensures that your retirement party is a memorable and heartfelt event, all within a budget-friendly framework."
     
   },
   {
     "id": "6",
-    "name": "Weddings",
-    "image": "https://i.ibb.co/F6NfcD3/leonardo-miranda-dv-F6s1-H1x68-unsplash.jpg",
-    "description": "Are you ready to celebrate your love story with a touch of elegance and charm? Our 'Elegant Affair Wedding Package' is designed to make your special day truly unforgettable, without breaking the bank."
+    "name": "Baby shower",
+    "image": "https://i.ibb.co/YPC2crj/pexels-anthony-gomes-14534185.jpg",
+    "description": "Welcoming a new life into the world is a momentous occasion, and our Bundle of Joy Baby Shower Package is designed to make this celebration both memorable and affordable. a family member, we're here to help you create a heartwarming and stress-free baby shower."
     
   }
 ]

@@ -14,6 +14,7 @@ export default function SignUp() {
   
     const { createUser , loginWithGoogle , loginWithGithub} = useContext(AuthContext);
     const [ error , setError ] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -40,7 +41,8 @@ export default function SignUp() {
         .then(result => {
            updateProfile(auth.currentUser, {displayName: name, photoURL: photo})
             e.target.reset();
-            toast.success('Successfully Account Created!')
+            navigate('/');
+            toast.success('Successfully Account Created!',{duration: 3000});
         })
         .catch(error =>  toast.error('An error occurred!'))
     }
@@ -58,12 +60,15 @@ export default function SignUp() {
 
 
   return (
-    <div className="hero h-[780px] bg-base-200">
-    <div className="hero-content flex-col w-[360px] md:w-[420px]">
-      <div className="text-center lg:text-left">
-        <h1 className="text-3xl lg:text-4xl text-red-500 font-bold"> Create New Account!</h1>
+    <div className="hero h-[1000px] md:h-[800px] bg-base-200 rounded-lg">
+    <div className="hero-content flex-col md:flex-row w-full gap-0">
+
+    <div className="text-center lg:text-left bg-white pt-5 md:py-[132px] rounded-l-lg">
+        <h1 className="text-[27px] lg:text-[32px] text-yellow-600 font-bold text-center mb-4"> Create New Account !</h1>
+        <img src="/11879344_Checklist.jpg" className="w-96"/>
       </div>
-      <div className="rounded flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+
+      <div className="rounded flex-shrink-0 w-full max-w-sm  bg-base-100">
         <div className="p-6">
 
 
@@ -100,7 +105,7 @@ export default function SignUp() {
           </div>
 
             <div>
-                <h4 className="text-sm font-semibold"> Already Have An Account? <Link to='/login'> <span className="text-orange-500 hover:underline"> Login</span></Link> </h4>
+                <h4 className="text-sm font-semibold"> Already Have An Account? <Link to='/login'> <span className="text-yellow-600 hover:underline"> Login</span></Link> </h4>
             </div>
 
            
@@ -111,7 +116,7 @@ export default function SignUp() {
             </div>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-error text-gray-50 hover:bg-rose-500" type="submit"> Register </button>
+            <button className="bg-yellow-600 py-2 px-3 text-gray-100 rounded font-semibold transition-all hover:bg-yellow-700 text-sm md:text-base" type="submit"> Register </button>
           </div>
         </form>
 

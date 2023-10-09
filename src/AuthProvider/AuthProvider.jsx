@@ -70,7 +70,7 @@ export default function AuthProvider({children}) {
     const authInfo = { sliderImages , services, allFeedback,  createUser, loginUser, loginWithGoogle, loginWithGithub, logOut ,  currentUser, loading }
 
 
-    if(loading){return  <span className="loading loading-spinner text-warning w-10 md:w-16 absolute top-[15%] left-2/4"></span>}
+    if(loading){return  <span className="loading loading-spinner text-red-400 w-9 md:w-12 absolute top-[13%] left-2/4"></span>}
 
   return (
     <>

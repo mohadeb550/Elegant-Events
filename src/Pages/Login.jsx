@@ -23,7 +23,7 @@ export default function Login() {
         .then(result => {
     
             e.target.reset();
-            toast.success('Login Successful !');
+            toast.success('Login Successful !',{duration:3000});
             navigate(location.state? location.state : '/');
         })
         .catch(error =>  toast.error(error.message))
@@ -43,12 +43,15 @@ export default function Login() {
 
 
   return(
-    <div className="hero h-[600px] bg-base-200">
-    <div className="hero-content flex-col w-[360px] md:w-[420px]">
+    <div className="hero h-[1000px] md:h-[600px] bg-base-200">
+    <div className="hero-content flex-col md:flex-row w-full">
+
       <div className="text-center lg:text-left">
-        <h1 className="text-3xl lg:text-4xl text-red-500 font-bold">Login now!</h1>
+        <h1 className="text-3xl lg:text-[32px] text-rose-600 font-bold text-center">Login now!</h1>
+        <img src="/6184161_3099607.svg" className="w-96"/>
       </div>
-      <div className="rounded flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+
+      <div className="rounded-lg flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
         <div className="p-5">
 
 
@@ -70,7 +73,7 @@ export default function Login() {
           
 
             <div className="mt-3">
-                <h4 className="text-sm font-semibold"> Don't Have An Account? <Link to='/register'> <span className="text-orange-500  hover:underline"> Register </span></Link> </h4>
+                <h4 className="text-sm font-semibold"> Don't Have An Account? <Link to='/register'> <span className="text-yellow-600  hover:underline"> Register </span></Link> </h4>
             </div>
 
             <div className="flex flex-col justify-evenly gap-3 mt-4 ">
@@ -81,7 +84,7 @@ export default function Login() {
 
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-error text-gray-50 hover:bg-rose-500" type="submit"> Login </button>
+            <button className="bg-yellow-600 py-2 px-3 text-gray-100 rounded font-semibold transition-all hover:bg-yellow-700 text-sm md:text-base" type="submit"> Login </button>
           </div>
         </form>
 

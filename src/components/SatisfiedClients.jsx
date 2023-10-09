@@ -2,14 +2,23 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { IoMdQuote } from 'react-icons/io'
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
+
 
 
 function AutoplaySlider() {
 
   const { allFeedback } = useContext(AuthContext);
+  
+  useEffect(()=>{
+    Aos.init();
+  },[])
+
 
 
   const responsiveSettings = [
@@ -46,7 +55,7 @@ function AutoplaySlider() {
   };
 
   return (
-    <div className="autoplay-slider my-32 w-[95%] mx-auto">
+    <div className="autoplay-slider my-32 w-[95%] mx-auto" data-aos="fade-down">
         <h1 className="text-[26px] md:text-3xl lg:text-5xl text-yellow-600 font-bold text-center mb-10 md:mb-16 lg:mb-20"> Satisfied Clients About Us</h1>
       <Slider {...settings}>
 
